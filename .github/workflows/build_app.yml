@@ -13,6 +13,7 @@ jobs:
     - name: set up JDK
       uses: actions/setup-java@v3
       with:
+        distribution: 'temurin'
         java-version: 17
     - name: Make Gradle executable
       run: chmod +x ./gradlew
